@@ -6,8 +6,8 @@
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
-  padding: 0rem 5.6rem;
+  color: #FDC830;
+  padding: 0;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -15,11 +15,24 @@
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
+  .text-color-main {
+    font-size: 1.3em;
+  }
 
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
+  #vantaBirds {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .container {
+    margin-top: 150px;
+  }
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -47,8 +60,14 @@
     }
   }
 
+  a {
+    color: #67a173;
+  }
+
+
   .hero-cta {
     display: flex;
+    margin: 10px;
 
     @include respond(tab-port) {
       justify-content: center;
@@ -56,10 +75,41 @@
 
     & a {
       font-size: 2.4rem;
+      margin: 10px;
 
       @include respond(phone) {
         font-size: 2rem;
       }
     }
   }
+} 
+nav {
+  background-image: linear-gradient(to right, #FDC830 , #67a173);
 }
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+
+.navbar-brand {
+  font-size: 2em;
+}
+
+.navbar-custom {
+  color: #FFFFFF;
+}
+

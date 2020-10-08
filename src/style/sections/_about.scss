@@ -23,6 +23,10 @@
       padding-bottom: 5rem;
     }
 
+    .button {
+      margin: 10px;
+    }
+
     &__image {
       display: flex;
       height: 100%;
@@ -75,5 +79,24 @@
         }
       }
     }
+  }
+
+  .card-header {
+    background-color: rgba(255, 196, 108, 0.377);
+  }
+
+  .card-body {
+    color: black;
+    font-size: 13px;
+    column-count: 2;
+  }
+
+  .img-fluid {
+    border-radius: 150px !important;
+  }
+
+  .btn {
+    color: orangered;
+    font-size: 20px;
   }
 }
